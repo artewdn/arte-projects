@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ana</title>
+    <script defer src="scripts/ana-scripts.js"></script>
+    <link rel="stylesheet" href="styles/ana-styles.css">
+    
+  </head>
+  <body>
+    <!--Validation Body-->
+    <div
+      id="container"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+      "
+    >
+      <div>
+        <label for="keyword">Enter your name:</label>
+        <input type="text" id="keyword" style="margin-right: 10px;" onkeydown="
+        handleValidateKeyDown(event)"/>
+        <button onclick="validateAccess()">Access Page</button>
+      </div>
+    </div>
+
+    <!--SONG Player-->
+
+    <div id="songPlayer" class="songPlayer">
+      <audio id="song" src="images/edSheeran-perfect.mp3" controls loop></audio>
+    </div>
+
+
+    <!-- Proposal Content-->
+    <header>
+      <h1>This is a Special Message for You</h1>
+    </header>
+    
+    <main>
+      <section id="intro" class="main-pesan">
+        <p>Heii Anaa, from the very first time our paths crossed, you have brought boundless joy and love into my life.</p>
+        <p>Every moment I spend with you is a cherished memory, and I eagerly look forward to building a beautiful future together with you.</p>
+        <p>Will you grant me the honor of being the happiest person in the world by being mine?</p>
+        <!--<div id="typing-text"></div>-->
+      </section>
+      <!--
+      <section id="memories">
+        <div class="photo-grid">
+          <img src="" alt="For you">
+          <img src="" alt="For you">
+        </div>
+      </section>
+      -->
+     
+      <section>
+        <div id="content">
+          <button id="evil-button" class="no-button centered-button">NO!</button>
+        </div>
+
+        <div>
+          <button class="js-button-yes toggle-button  yes-button centered-button" onclick="
+            toggleButton('.js-button-yes');
+            // yesClicked();
+            showAlert();
+            ">YES!</button>
+        </div>
+
+        <!-- Happy popup -->
+        <div id="alertPopup" class="alertPopup alert-teks">
+          <span class="closebtn" onclick="closeAlert()">&times;</span>
+          <span style='font-size:80px;'>&#128525;&#128525;&#128525;</span>
+          <p>YEEEEEAAAYYYYYY!!!</p>
+          <p>THANK YOU ANAAA!!! I'M THE HAPPIEST PERSON IN THE WOOORLD!!!</p>
+          <p>YOU ARE NOW MINEEE!!!</p>
+          <span style='font-size:50px;'>&#128540;&#128536;</span> 
+          <p>I LOVE YOUU &#x2764; &#x2764; &#x2764;</p>
+        </div>
+
+      </section>
+      
+   
+    </main>
+
+      <footer>
+        <p id="footer">&copy; 2023 ARTETRA</p>
+      </footer>
+  </body>
+</html>
